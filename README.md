@@ -14,8 +14,11 @@
 - Updating records directly on the tableview
 - Deletion of records
 - Shows custom alert dialogs
-- <strong>System not connected to a database</strong>
-- <strong>Version control was not used</strong>
+
+### Note:
+- <strong>System is not connected to a database.</strong>
+- <strong>Version control was not used.</strong>
+- <strong>Now that the JDK no longer includes JavaFX, it is necessary to explicitly include the JavaFX modules when cloning this repo.</strong>
 
 ### REGISTRATION WINDOW
 ![image](https://user-images.githubusercontent.com/56070628/76082808-74fd6a80-5fac-11ea-8dd7-bf155d34780a.png)
