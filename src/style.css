@@ -1,0 +1,200 @@
+root {
+    -fx-background-color: #252525;
+}
+AnchorPane {
+    -fx-background-color: white;
+    -fx-border-width: 1;
+    -fx-border-color: #2471A3;
+}
+
+Label {
+    -fx-text-fill: black;
+}
+Label#dateLabel {
+    -fx-text-fill: grey;
+}
+Label.credits {
+    -fx-text-fill: grey;
+}
+Label.filename {
+    -fx-text-fill: #2471A3;
+}
+
+TextField {
+    -fx-background-color: whitesmoke;
+    -fx-text-fill: black;
+}
+.combo-box{
+    -fx-background-color: whitesmoke;
+}
+.combo-box .cell:selected {
+    -fx-text-fill: black;
+}
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-border-color: #313131;
+}
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: whitesmoke;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+.combo-box-popup .list-view .scroll-bar:vertical .track {
+    -fx-background-color: white;
+}
+.combo-box-popup .list-view .scroll-bar:vertical .thumb {
+    -fx-background-color: whitesmoke;
+}
+.combo-box-popup .list-view .increment-button {
+    -fx-background-color: whitesmoke;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-shape: "";
+}
+.combo-box-popup .list-view .decrement-button {
+    -fx-background-color: whitesmoke;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-shape: "";
+}
+
+Button#register {
+    -fx-background-color: #2471A3;
+    -fx-text-fill: white;
+}
+Button.nav {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+Button.navHome {
+    -fx-background-color: #2471A3;
+    -fx-text-fill: #DEDEDE;
+}
+Button.close {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+Button.quit, Button.del {
+     -fx-background-color: white;
+     -fx-text-fill: darkred;
+}
+Button.file, Button.min {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+Button#register:hover {
+    -fx-background-color: #1A5276;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+Button.nav:hover {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+Button.navHome:hover {
+    -fx-background-color: #1A5276;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+Button.del:hover {
+    -fx-background-color: whitesmoke;
+    -fx-text-fill: red;
+    -fx-cursor: hand;
+}
+Button.close:hover {
+    -fx-text-fill: red;
+}
+Button.quit:hover{
+    -fx-background-color: white;
+    -fx-text-fill: red;
+    -fx-cursor: hand;
+}
+Button.file:hover {
+    -fx-background-color: whitesmoke;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+Button.min:hover {
+    -fx-text-fill: #dedede;
+    -fx-cursor: hand;
+}
+.table-view {
+    -fx-background-color: white;
+    -fx-border-width: 1;
+    -fx-border-color: whitesmoke;
+}
+.table-view .cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-border-color: whitesmoke;
+}
+.table-view .column-header{
+    -fx-background-color: white;
+}
+.table-view .table-row-cell:hover {
+    -fx-cursor: text;
+}
+.table-view .table-row-cell:selected {
+    -fx-background-color: whitesmoke;
+    -fx-text-fill: black;
+}
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color: whitesmoke;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-shape: "";
+}
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+    -fx-background-color: white;
+    -fx-border-color:whitesmoke;
+}
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:whitesmoke;
+    -fx-border-color:white;
+}
+
+.warning,
+.success,
+.confirm {
+    -fx-background-color: white;
+    -fx-border-color: #1A5276;
+    -fx-border-width: 1;
+    -fx-padding: 10;
+}
+.warning .button-bar .container,
+.success .button-bar .container,
+.confirm .button-bar .container{
+    -fx-background-color: transparent;
+}
+
+.warning .header-panel,
+.success .header-panel,
+.confirm .header-panel {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+.warning .button,
+.success .button,
+.confirm .button {
+    -fx-background-color:#2471A3;
+    -fx-text-fill: white;
+    -fx-wrap-text: true;
+    -fx-cursor:hand;
+}
+.warning .button:hover,
+.success .button:hover,
+.confirm .button:hover {
+    -fx-background-color: #1A5276;
+    -fx-text-fill: white;
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#window_drag" onMousePressed="#window_press" prefHeight="636.0" prefWidth="984.0" styleClass="credits" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller_Table">
+   <children>
+      <Button alignment="TOP_LEFT" layoutX="14.0" layoutY="76.0" mnemonicParsing="false" onAction="#openFile" prefHeight="25.0" prefWidth="150.0" styleClass="file" text="Open..." AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="76.0" />
+      <Button layoutX="14.0" layoutY="43.0" mnemonicParsing="false" onAction="#window_home" prefWidth="150.0" styleClass="navHome" text="Register New Person" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="43.0" />
+      <Button alignment="TOP_LEFT" layoutX="14.0" layoutY="101.0" mnemonicParsing="false" onAction="#saveFileAs" prefHeight="25.0" prefWidth="150.0" styleClass="file" text="Save as..." AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="101.0" />
+      <Button alignment="TOP_LEFT" layoutX="14.0" layoutY="126.0" mnemonicParsing="false" onAction="#saveChanges" prefWidth="150.0" styleClass="file" text="Save Changes" />
+      <Button alignment="TOP_LEFT" layoutX="14.0" layoutY="203.0" mnemonicParsing="false" onAction="#delete_AllRecords" prefHeight="25.0" prefWidth="150.0" styleClass="del" text="Delete All" />
+      <Button alignment="TOP_LEFT" layoutX="14.0" layoutY="178.0" mnemonicParsing="false" onAction="#delete_Record" prefWidth="150.0" styleClass="del" text="Delete" />
+      <Button alignment="TOP_LEFT" layoutX="15.0" layoutY="529.0" mnemonicParsing="false" onAction="#window_close" prefHeight="25.0" prefWidth="150.0" styleClass="quit" text="Quit" />
+      <Button alignment="CENTER" layoutX="948.0" layoutY="2.0" mnemonicParsing="false" onAction="#window_close" prefHeight="25.0" prefWidth="19.0" styleClass="close" text="X" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="16.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="917.0" layoutY="1.0" mnemonicParsing="false" onAction="#window_minimize" styleClass="min" text="V">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="filterValue" layoutX="161.0" layoutY="43.0" prefHeight="25.0" prefWidth="640.0" promptText="Filter / Search" AnchorPane.leftAnchor="184.0" AnchorPane.topAnchor="43.0" />
+      <ComboBox fx:id="filterOptions" layoutX="833.0" layoutY="43.0" prefHeight="25.0" prefWidth="141.0" />
+      <TableView fx:id="tableView" layoutX="183.0" layoutY="76.0" prefHeight="552.0" prefWidth="791.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="183.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="76.0">
+        <columns>
+            <TableColumn fx:id="col_fname" onEditCommit="#txtfNameEdited" prefWidth="100.0" text="First Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="fname" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn fx:id="col_lname" onEditCommit="#txtlNameEdited" prefWidth="127.0" text="Last Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="lname" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn fx:id="col_birthdate" onEditCommit="#txtDateEdited" prefWidth="73.0" text="Birth Date">
+                <cellValueFactory>
+                    <PropertyValueFactory property="birthdate" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn fx:id="col_email" onEditCommit="#txtEmailEdited" prefWidth="144.0" text="Email">
+                <cellValueFactory>
+                    <PropertyValueFactory property="email" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn fx:id="col_age" prefWidth="50.0" text="Age">
+                <cellValueFactory>
+                    <PropertyValueFactory property="age" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn fx:id="col_code" prefWidth="64.0" text="Code">
+                <cellValueFactory>
+                    <PropertyValueFactory property="countryCode" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn fx:id="col_phone" onEditCommit="#txtPhoneEdited" prefWidth="81.0" text="Phone">
+                <cellValueFactory>
+                    <PropertyValueFactory property="phone" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn fx:id="col_country" onEditCommit="#txtCountryEdited" prefWidth="154.0" text="Country">
+                <cellValueFactory>
+                    <PropertyValueFactory property="countryName" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <Label layoutX="15.0" layoutY="574.0" prefHeight="48.0" prefWidth="171.0" styleClass="credits" text="Glaysa Fernandez - 2020 Oslo Metropolitan University" wrapText="true" />
+      <Label layoutX="15.0" layoutY="10.0" prefHeight="17.0" prefWidth="150.0" styleClass="credits" text="Registration System" />
+      <Label fx:id="fileNameIndicator" alignment="CENTER" layoutX="184.0" layoutY="10.0" prefHeight="17.0" prefWidth="640.0" styleClass="filename" />
+   </children>
+</AnchorPane>
