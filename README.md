@@ -15,6 +15,7 @@
 - Deletion of records
 - Shows custom alert dialogs
 - <strong>System not connected to a database</strong>
+- <strong>Version control was not used</strong>
 
 ### REGISTRATION WINDOW
 ![image](https://user-images.githubusercontent.com/56070628/76082808-74fd6a80-5fac-11ea-8dd7-bf155d34780a.png)
